@@ -1,0 +1,166 @@
+/* ===== BASE ===== */
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: whitesmoke;
+  margin: 0;
+  padding: 40px 15px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid lightgray;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  font-family: Courier New, monospace;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* ===== DATE ===== */
+.date-section label {
+  font-family: cursive;
+  color: dimgray;
+}
+
+#attendanceDate {
+  background: lightgray;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: darkcyan;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===== INPUT ===== */
+.input-section {
+  display: flex;
+  gap: 10px;
+  background: ghostwhite;
+  padding: 12px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.input-section input {
+  flex: 1;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.input-section button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===== BULK ===== */
+.bulk-section {
+  background: ghostwhite;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+  margin-bottom: 20px;
+}
+
+.bulk-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bulk-group span {
+  font-size: 12px;
+  font-weight: 700;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.b-btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  background: white;
+  color: steelblue;
+  border: 1px solid lightblue;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-size: 11px;
+  color: darkgray;
+  padding: 12px 15px;
+  border-bottom: 2px solid whitesmoke;
+}
+
+td {
+  padding: 16px 15px;
+  border-bottom: 1px solid whitesmoke;
+  font-size: 14px;
+}
+
+/* ===== STATUS ===== */
+.status-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-top: 10px;
+  max-width: 170px;
+}
+
+.status-btn {
+  padding: 5px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.present-btn { background: green; }
+.absent-btn { background: red; }
+.leave-btn { background: orange; }
+.delete-btn { 
+  background: mistyrose; 
+  color: darkred; 
+  border: 1px solid pink;
+  grid-column: span 2;
+}
+
+.present { color: green; font-weight: bold; font-size: 13px; }
+.absent { color: red; font-weight: bold; font-size: 13px; }
+.leave { color: orange; font-weight: bold; font-size: 13px; }
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 12px;
+  color: gray;
+  font-family: Courier New, monospace;
+}
